@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+assert.strictEqual(${1:actual}, ${2:expected}, ${3:msg});
+]]></content>
+    <tabTrigger>asse</tabTrigger>
+    <scope>source.js</scope>
+    <description>assert.strictEqual</description>
+</snippet>

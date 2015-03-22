@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+function ${1:class_name}(${2:options}) {
+  if (!(this instanceof ${1:class_name})) {
+    return new ${1:class_name}(${2:options});
+  }
+  ${0}
+}
+]]></content>
+    <tabTrigger>singleton</tabTrigger>
+    <scope>source.js</scope>
+    <description>singleton pattern</description>
+</snippet>
