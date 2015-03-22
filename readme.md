@@ -3,6 +3,12 @@
 > My SublimeText 2/3 snippets. From BDD through `assert` to singleton pattern, es6 fat arrows and es6 import
 
 
+## Rebuilding
+```
+zip javascript-charlike-snippets.sublime-package -r javascript-charlike-snippets && \
+cp javascript-charlike-snippets.sublime-package ~/.config/sublime-text-3/Installed\ Packages/
+```
+
 ### module system
 
 - **[rr]** node require
