@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+assert.ifError(${1:actual}, ${2:expected}, ${3:msg});
+]]></content>
+  <tabTrigger>asi</tabTrigger>
+  <scope>source.js</scope>
+  <description>assert.ifError</description>
+</snippet>

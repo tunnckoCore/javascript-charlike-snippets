@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+assert.throws(function _throws() {
+  ${1:actual}
+}, ${2:expected}, ${3:msg});
+]]></content>
+  <tabTrigger>ast</tabTrigger>
+  <scope>source.js</scope>
+  <description>assert.throws</description>
+</snippet>

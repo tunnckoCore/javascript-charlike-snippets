@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+assert.deepStrictEqual(${1:actual}, ${2:expected}, ${3:msg});
+]]></content>
+  <tabTrigger>assd</tabTrigger>
+  <scope>source.js</scope>
+  <description>assert.deepStrictEqual</description>
+</snippet>

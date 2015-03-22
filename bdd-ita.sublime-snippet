@@ -2,6 +2,7 @@
   <content><![CDATA[
 it('${1:description}', function(done) {
   ${0}
+  done();
 });
 ]]></content>
   <tabTrigger>ita</tabTrigger>

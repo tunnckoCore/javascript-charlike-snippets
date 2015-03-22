@@ -3,6 +3,173 @@
 > My SublimeText 2/3 snippets. From BDD through `assert` to singleton pattern, es6 fat arrows and es6 import
 
 
+### module system
+
+- **[rr]** node require
+```js
+var pkg = require('package');
+```
+
+- **[imp]** javascript import
+```js
+import pkg from 'package';
+```
+
+### functions and arrows
+
+- **[fat]** es6 arrow
+```js
+(args) => 
+```
+
+- **[ofat]** es6 arrow as object property
+```js
+name: (args) => 
+```
+
+- **[me]** module.exports - named function
+```js
+module.exports = function named(args) {
+  // body
+};
+```
+
+- **[mea]** module.exports - anonymous function
+```js
+module.exports = function(args) {
+  // body
+};
+```
+
+- **[fn]** named function
+```js
+function name(args) {
+  
+}
+```
+
+- **[afn]** anonymous function
+```js
+function(args) {
+  
+}
+```
+
+- **[ofn]** anonymous function as object property
+```js
+name: function name(args) {
+  
+}
+```
+
+- **[oafn]** anonymous function as object property
+```js
+name: function(args) {
+  
+}
+```
+
+### assert
+
+- **[ase]** assert equal
+```js
+assert.equal(actual, expected, msg);
+```
+
+- **[asn]** assert notEqual
+```js
+assert.notEqual(actual, expected, msg);
+```
+
+- **[asse]** assert strictEqual
+```js
+assert.strictEqual(actual, expected, msg);
+```
+
+- **[assn]** assert notStrictEqual
+```js
+assert.notStrictEqual(actual, expected, msg);
+```
+
+- **[asd]** assert deepEqual
+```js
+assert.deepEqual(actual, expected, msg);
+```
+
+- **[asdn]** assert notDeepEqual
+```js
+assert.notDeepEqual(actual, expected, msg);
+```
+
+- **[assd]** assert.deepStrictEqual
+```js
+assert.deepStrictEqual(actual, expected, msg);
+```
+
+- **[assdn]** assert.notDeepStrictEqual
+```js
+assert.notDeepStrictEqual(actual, expected, msg);
+```
+
+- **[ast]** assert.throws
+```js
+assert.throws(actual, expected, msg);
+```
+
+- **[asi]** assert.ifError
+```js
+assert.ifError(actual, expected, msg);
+```
+
+### testing
+
+- **[desc]** describe
+```js
+describe('description', function() {
+  // body
+});
+```
+
+- **[ita]** it async
+```js
+it('description', function(done) {
+  // body
+  done();
+});
+```
+
+### console and misc
+
+- **[cl]** console.log
+```js
+console.log(actual);
+```
+
+- **[ce]** console.error
+```js
+console.error(actual);
+```
+
+- **[self]** self this
+```js
+var self = this;
+```
+
+- **[us]** use strict
+```js
+'use strict';
+```
+
+- **[singleton]** singleton pattern
+```js
+function ClassName(options) {
+  if (!(this instanceof ClassName)) {
+    return new ClassName(options);
+  }
+  // body
+}
+```
+
 
 
 ## Author

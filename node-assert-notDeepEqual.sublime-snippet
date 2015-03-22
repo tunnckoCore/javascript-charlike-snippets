@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+assert.notDeepEqual(${1:actual}, ${2:expected}, ${3:msg});
+]]></content>
+  <tabTrigger>asdn</tabTrigger>
+  <scope>source.js</scope>
+  <description>assert.notDeepEqual</description>
+</snippet>

@@ -1,8 +1,8 @@
 <snippet>
   <content><![CDATA[
-function ${1:class_name}(${2:options}) {
-  if (!(this instanceof ${1:class_name})) {
-    return new ${1:class_name}(${2:options});
+function ${1:ClassName}(${2:options}) {
+  if (!(this instanceof ${1:ClassName})) {
+    return new ${1:ClassName}(${2:options});
   }
   ${0}
 }
