@@ -1,8 +1,8 @@
 <snippet>
-    <content><![CDATA[
+  <content><![CDATA[
 console.error(${1:actual})${0}
 ]]></content>
-    <tabTrigger>ce</tabTrigger>
-    <scope>source.js</scope>
-    <description>console.error</description>
+  <tabTrigger>ce</tabTrigger>
+  <scope>source.js</scope>
+  <description>console.error</description>
 </snippet>

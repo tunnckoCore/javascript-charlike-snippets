@@ -1,10 +1,10 @@
 <snippet>
-    <content><![CDATA[
+  <content><![CDATA[
 ${1:functionName}: function(${2:arguments}) {
   ${3}
 }
 ]]></content>
-    <tabTrigger>oafn</tabTrigger>
-    <scope>source.js</scope>
-    <description>anonymous function property</description>
+  <tabTrigger>oafn</tabTrigger>
+  <scope>source.js</scope>
+  <description>anonymous function property</description>
 </snippet>

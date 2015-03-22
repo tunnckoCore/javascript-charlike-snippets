@@ -1,8 +1,8 @@
 <snippet>
-    <content><![CDATA[
+  <content><![CDATA[
 (${1:arguments}) => ${0}
 ]]></content>
-    <tabTrigger>fat</tabTrigger>
-    <scope>source.js</scope>
-    <description>fat arrow</description>
+  <tabTrigger>fat</tabTrigger>
+  <scope>source.js</scope>
+  <description>fat arrow</description>
 </snippet>

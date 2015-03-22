@@ -1,8 +1,8 @@
 <snippet>
-    <content><![CDATA[
+  <content><![CDATA[
 assert.notEqual(${1:actual}, ${2:expected}, ${3:msg});
 ]]></content>
-    <tabTrigger>asn</tabTrigger>
-    <scope>source.js</scope>
-    <description>assert.notEqual</description>
+  <tabTrigger>asn</tabTrigger>
+  <scope>source.js</scope>
+  <description>assert.notEqual</description>
 </snippet>

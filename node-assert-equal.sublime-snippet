@@ -1,8 +1,8 @@
 <snippet>
-    <content><![CDATA[
+  <content><![CDATA[
 assert.equal(${1:actual}, ${2:expected}, ${3:msg});
 ]]></content>
-    <tabTrigger>ase</tabTrigger>
-    <scope>source.js</scope>
-    <description>assert.equal</description>
+  <tabTrigger>ase</tabTrigger>
+  <scope>source.js</scope>
+  <description>assert.equal</description>
 </snippet>
