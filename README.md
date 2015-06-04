@@ -9,6 +9,7 @@ zip javascript-charlike-snippets.sublime-package -r javascript-charlike-snippets
 cp javascript-charlike-snippets.sublime-package ~/.config/sublime-text-3/Installed\ Packages/
 ```
 
+
 ## Code Style
 
 [![standard][standard-image]][standard-url]
@@ -18,12 +19,47 @@ This snippets use [`standard`][standard-url] to maintain code style and consiste
 [standard-image]: https://cdn.rawgit.com/feross/standard/master/badge.svg
 [standard-url]: https://github.com/feross/standard
 
+
 ## Table of Contents
 - [module system](https://github.com/tunnckoCore/javascript-charlike-snippets#module-system)
+  + `rr` node variable require
+  + `req` node require
+  + `imp` javascript import
 - [functions-and-arrows](https://github.com/tunnckoCore/javascript-charlike-snippets#functions-and-arrows)
+  + `fat` es6 arrow function
+  + `ofat` es6 arrow function as object property
+  + `me` module.exports
+  + `men` module.exports - named function
+  + `mea` module.exports - anonymous function
+  + `fn` named function
+  + `afn` anonymous function
+  + `ofn` named function as object property
+  + `oafn` anonymous function as object property
 - [assert](https://github.com/tunnckoCore/javascript-charlike-snippets#assert)
+  + `ase` assert.equal
+  + `asn` assert.notEqual
+  + `asse` assert.strictEqual
+  + `assn` assert.notStrictEqual
+  + `asd` assert.deepEqual
+  + `asdn` assert.notDeepEqual
+  + `assd` assert.deepStrictEqual
+  + `assdn` assert.notDeepStrictEqual
+  + `asi` assert.ifError
+  + `ast` assert.throws(actual, expected, msg)
+  + `aste` assert.throws fixture Error
+  + `asttype`  assert.throws fixture TypeError
+  + `astre`  assert.throws fixture regexp message
 - [testing](https://github.com/tunnckoCore/javascript-charlike-snippets#testing)
+  + `desc` describe
+  + `ita` it async
+  + `its` it sync
 - [console and misc](https://github.com/tunnckoCore/javascript-charlike-snippets#console-and-misc)
+  + `cl` console.log
+  + `ce` console.error
+  + `self` self this
+  + `us` use strict
+  + `loop` fast while loop
+  + `singleton` singleton pattern
 
 
 ### module system
@@ -144,11 +180,6 @@ assert.deepStrictEqual(actual, expected, msg)
 assert.notDeepStrictEqual(actual, expected, msg)
 ```
 
-- **[ast]** assert.throws
-```js
-assert.throws(actual, expected, msg)
-```
-
 - **[asi]** assert.ifError
 ```js
 assert.ifError(actual, expected, msg)
@@ -159,17 +190,17 @@ assert.ifError(actual, expected, msg)
 assert.throws(actual, expected, msg)
 ```
 
-- **[aste]** assert.throws
+- **[aste]** assert.throws fixture Error
 ```js
 assert.throws(fixture, Error)
 ```
 
-- **[asttype]** assert.throws
+- **[asttype]** assert.throws fixture TypeError
 ```js
 assert.throws(fixture, TypeError)
 ```
 
-- **[astre]** assert.throws
+- **[astre]** assert.throws fixture regexp message
 ```js
 assert.throws(fixture, /expected msg/)
 ```
@@ -191,7 +222,7 @@ it('description', function (done) {
 })
 ```
 
-- **[ita]** it sync
+- **[its]** it sync
 ```js
 it('description', function (done) {
   // body
