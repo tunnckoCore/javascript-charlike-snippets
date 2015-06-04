@@ -35,6 +35,8 @@ This snippets use [`standard`][standard-url] to maintain code style and consiste
   + `afn` anonymous function
   + `ofn` named function as object property
   + `oafn` anonymous function as object property
+  + `fixture` fixture function (useful when assert.throws)
+  + `iife` immediately-invoked function expression
 - [assert](https://github.com/tunnckoCore/javascript-charlike-snippets#assert)
   + `ase` assert.equal
   + `asn` assert.notEqual
@@ -137,6 +139,21 @@ ${1:name}: function (${2:args}) {
   ${0}
 }
 ```
+
+- **[fixture]** fixture function (useful when assert.throws)
+```js
+function fixture () {
+  ${1:fnName}
+}${0}
+```
+
+- **[iife]** immediately-invoked function expression
+```js
+;(function () {
+    ${0:// body...}
+})()
+```
+
 
 ### assert
 
