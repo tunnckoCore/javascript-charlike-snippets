@@ -18,6 +18,14 @@ This snippets use [`standard`][standard-url] to maintain code style and consiste
 [standard-image]: https://cdn.rawgit.com/feross/standard/master/badge.svg
 [standard-url]: https://github.com/feross/standard
 
+## Table of Contents
+- [module system](https://github.com/tunnckoCore/javascript-charlike-snippets#module-system)
+- [functions-and-arrows](https://github.com/tunnckoCore/javascript-charlike-snippets#functions-and-arrows)
+- [assert](https://github.com/tunnckoCore/javascript-charlike-snippets#assert)
+- [testing](https://github.com/tunnckoCore/javascript-charlike-snippets#testing)
+- [console and misc](https://github.com/tunnckoCore/javascript-charlike-snippets#console-and-misc)
+
+
 ### module system
 
 - **[rr]** node variable require
