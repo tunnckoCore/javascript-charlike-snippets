@@ -1,10 +1,10 @@
 <snippet>
   <content><![CDATA[
-module.exports = function(${1:args}) {
+module.exports = function (${1:args}) {
   ${0}
-};
+}
 ]]></content>
   <tabTrigger>mea</tabTrigger>
   <scope>source.js</scope>
-  <description>module.exports anonymous</description>
+  <description>module.exports anonymous function</description>
 </snippet>

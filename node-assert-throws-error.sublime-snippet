@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+assert.throws(${1:fixture}, Error)${0}
+]]></content>
+  <tabTrigger>aste</tabTrigger>
+  <scope>source.js</scope>
+  <description>assert.throws Error</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+var len = ${1:arr}.length
+var i = 0
+
+while (i < len) {
+  var val = ${1:arr}[${2:i++}]
+  ${0}
+}
+]]></content>
+  <tabTrigger>loop</tabTrigger>
+  <scope>source.js</scope>
+  <description>fast while loop</description>
+</snippet>

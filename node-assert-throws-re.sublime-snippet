@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+assert.throws(${1:fixture}, /${2:expected msg}/)${0}
+]]></content>
+  <tabTrigger>astre</tabTrigger>
+  <scope>source.js</scope>
+  <description>assert.throws regexp message</description>
+</snippet>

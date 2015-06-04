@@ -2,10 +2,9 @@
   <content><![CDATA[
 it('${1:description}', function (done) {
   ${0}
-  done()
 })
 ]]></content>
-  <tabTrigger>ita</tabTrigger>
+  <tabTrigger>its</tabTrigger>
   <scope>source.js</scope>
-  <description>bdd: it async</description>
+  <description>bdd: it sync</description>
 </snippet>
