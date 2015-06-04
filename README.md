@@ -9,6 +9,15 @@ zip javascript-charlike-snippets.sublime-package -r javascript-charlike-snippets
 cp javascript-charlike-snippets.sublime-package ~/.config/sublime-text-3/Installed\ Packages/
 ```
 
+## Code Style
+
+[![standard][standard-image]][standard-url]
+
+This snippets use [`standard`][standard-url] to maintain code style and consistency, and to avoid style arguments. You are encouraged to install it globally.
+
+[standard-image]: https://cdn.rawgit.com/feross/standard/master/badge.svg
+[standard-url]: https://github.com/feross/standard
+
 ### module system
 
 - **[rr]** node variable require
