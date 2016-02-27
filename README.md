@@ -61,21 +61,25 @@ This snippets use [`standard`][standard-url] to maintain code style and consiste
   + `us` use strict
   + `loop` fast while loop
   + `singleton` singleton pattern
+  + `var` variable assigning, e.g. `var foo = bar`
 
 
 ### module system
 
 - **[rr]** node variable require
+
 ```js
 var ${2:pkg} = require('${1:package}')${0}
 ```
 
 - **[req]** node require
+
 ```js
 require('${1:package}')${0}
 ```
 
 - **[imp]** javascript import
+
 ```js
 import ${2:pkg} from '${1:package}'${0}
 ```
@@ -83,21 +87,25 @@ import ${2:pkg} from '${1:package}'${0}
 ### functions and arrows
 
 - **[fat]** es6 arrow
+
 ```js
 (${1:args}) => ${0}
 ```
 
 - **[ofat]** es6 arrow as object property
+
 ```js
 ${1:name}: (${2:args}) => ${0}
 ```
 
 - **[me]** module.exports
+
 ```js
 module.exports = ${0}
 ```
 
 - **[men]** module.exports - named function
+
 ```js
 module.exports = function ${1:name} (${2:args}) {
   ${0}
@@ -105,6 +113,7 @@ module.exports = function ${1:name} (${2:args}) {
 ```
 
 - **[mea]** module.exports - anonymous function
+
 ```js
 module.exports = function (${2:args}) {
   ${0}
@@ -112,6 +121,7 @@ module.exports = function (${2:args}) {
 ```
 
 - **[fn]** named function
+
 ```js
 function ${1:name} (${2:args}) {
   ${0}
@@ -119,6 +129,7 @@ function ${1:name} (${2:args}) {
 ```
 
 - **[afn]** anonymous function
+
 ```js
 function (${1:args}) {
   ${0}
@@ -126,6 +137,8 @@ function (${1:args}) {
 ```
 
 - **[ofn]** named function as object property
+
+
 ```js
 ${1:name}: function ${1:name} (${2:args}) {
   ${0}
@@ -133,6 +146,7 @@ ${1:name}: function ${1:name} (${2:args}) {
 ```
 
 - **[oafn]** anonymous function as object property
+
 ```js
 ${1:name}: function (${2:args}) {
   ${0}
@@ -140,134 +154,148 @@ ${1:name}: function (${2:args}) {
 ```
 
 - **[fixture]** fixture function (useful when assert.throws)
+
 ```js
 function fixture () {
   ${1:fnName}
 }${0}
 ```
 
-- **[iife]** immediately-invoked function expression
-```js
-;(function () {
-    ${0:// body...}
-})()
-```
-
-
 ### assert
 
 - **[ase]** assert equal
+
 ```js
-assert.equal(actual, expected, msg)
+${1:assert}.equal(${2:actual}, ${3:expected}, ${4:msg})${0}
 ```
 
 - **[asn]** assert notEqual
+
 ```js
-assert.notEqual(actual, expected, msg)
+${1:assert}.notEqual(${2:actual}, ${3:expected}, ${4:msg})${0}
 ```
 
 - **[asse]** assert strictEqual
+
 ```js
-assert.strictEqual(actual, expected, msg)
+${1:assert}.strictEqual(${2:actual}, ${3:expected}, ${4:msg})${0}
 ```
 
 - **[assn]** assert notStrictEqual
+
 ```js
-assert.notStrictEqual(actual, expected, msg)
+${1:assert}.notStrictEqual(${2:actual}, ${3:expected}, ${4:msg})${0}
 ```
 
 - **[asd]** assert deepEqual
+
 ```js
-assert.deepEqual(actual, expected, msg)
+${1:assert}.deepEqual(${2:actual}, ${3:expected}, ${4:msg})${0}
 ```
 
 - **[asdn]** assert notDeepEqual
+
 ```js
-assert.notDeepEqual(actual, expected, msg)
+${1:assert}.notDeepEqual(${2:actual}, ${3:expected}, ${4:msg})${0}
 ```
 
 - **[assd]** assert.deepStrictEqual
+
 ```js
-assert.deepStrictEqual(actual, expected, msg)
+${1:assert}.deepStrictEqual(${2:actual}, ${3:expected}, ${4:msg})${0}
 ```
 
 - **[assdn]** assert.notDeepStrictEqual
+
 ```js
-assert.notDeepStrictEqual(actual, expected, msg)
+${1:assert}.notDeepStrictEqual(${2:actual}, ${3:expected}, ${4:msg})${0}
 ```
 
 - **[asi]** assert.ifError
+
 ```js
-assert.ifError(actual, expected, msg)
+${1:assert}.ifError(${2:err})${0}
 ```
 
 - **[ast]** assert.throws
+
 ```js
-assert.throws(actual, expected, msg)
+${1:assert}.throws(${2:actual}, ${3:expected}, ${4:msg})${0}
 ```
 
 - **[aste]** assert.throws fixture Error
+
 ```js
-assert.throws(fixture, Error)
+${1:assert}.throws(${2:fixture}, Error)${0}
 ```
 
 - **[asttype]** assert.throws fixture TypeError
+
 ```js
-assert.throws(fixture, TypeError)
+${1:assert}.throws(${2:fixture}, TypeError)${0}
 ```
 
 - **[astre]** assert.throws fixture regexp message
+
 ```js
-assert.throws(fixture, /expected msg/)
+${1:assert}.throws(${2:fixture}, /${3:expected msg}/)${0}
 ```
 
 ### testing
 
 - **[desc]** describe
+
 ```js
-describe('description', function () {
-  // body
+${1:describe}('${2:description}', function () {
+  ${0}
 })
 ```
 
 - **[ita]** it async
+
 ```js
-it('description', function (done) {
-  // body
-  done()
+${1:it}('${2:description}', function (${3:done}) {
+  ${0}
+  ${4:done}()
 })
 ```
 
 - **[its]** it sync
+
 ```js
-it('description', function (done) {
-  // body
+${1:it}('${2:description}', function () {
+  ${0}
 })
 ```
 
 ### console and misc
 
 - **[cl]** console.log
+
 ```js
-console.log(actual)
+console.log(${1:actual})${0}
 ```
 
 - **[ce]** console.error
+
 ```js
-console.error(actual)
+console.error(${1:actual})${0}
 ```
 
 - **[self]** self this
+
 ```js
 var self = this
 ```
 
 - **[us]** use strict
+
 ```js
 'use strict'
 ```
 
 - **[loop]** fast while loop
+
 ```js
 var len = ${1:arr}.length
 var i = 0
@@ -279,13 +307,20 @@ while (i < len) {
 ```
 
 - **[singleton]** singleton pattern
+
 ```js
 function ${1:ClassName} (${2:options}) {
   if (!(this instanceof ${1:ClassName})) {
-    return new ${1:ClassName}(${2:options});
+    return new ${1:ClassName}(${2:options})
   }
   ${0}
 }
+```
+
+- **var** variable assigning
+
+```js
+var ${2:foo} = ${1:bar}${0}
 ```
 
 
