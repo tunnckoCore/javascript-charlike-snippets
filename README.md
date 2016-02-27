@@ -20,11 +20,11 @@ This snippets use [`standard`][standard-url] to maintain code style and consiste
 
 
 ## Table of Contents
-- [module system](https://github.com/tunnckoCore/javascript-charlike-snippets#module-system)
+- [module system](#module-system)
   + `rr` node variable require
   + `req` node require
   + `imp` javascript import
-- [functions-and-arrows](https://github.com/tunnckoCore/javascript-charlike-snippets#functions-and-arrows)
+- [functions-and-arrows](#functions-and-arrows)
   + `fat` es6 arrow function
   + `ofat` es6 arrow function as object property
   + `me` module.exports
@@ -36,7 +36,7 @@ This snippets use [`standard`][standard-url] to maintain code style and consiste
   + `oafn` anonymous function as object property
   + `fixture` fixture function (useful when assert.throws)
   + `iife` immediately-invoked function expression
-- [assert](https://github.com/tunnckoCore/javascript-charlike-snippets#assert)
+- [assert](#assert)
   + `ase` assert.equal
   + `asn` assert.notEqual
   + `asse` assert.strictEqual
@@ -50,11 +50,11 @@ This snippets use [`standard`][standard-url] to maintain code style and consiste
   + `aste` assert.throws fixture Error
   + `asttype`  assert.throws fixture TypeError
   + `astre`  assert.throws fixture regexp message
-- [testing](https://github.com/tunnckoCore/javascript-charlike-snippets#testing)
+- [testing](#testing)
   + `desc` describe
   + `ita` it async
   + `its` it sync
-- [console and misc](https://github.com/tunnckoCore/javascript-charlike-snippets#console-and-misc)
+- [console and misc](#console-and-misc)
   + `cl` console.log
   + `ce` console.error
   + `self` self this
@@ -62,6 +62,9 @@ This snippets use [`standard`][standard-url] to maintain code style and consiste
   + `loop` fast while loop
   + `singleton` singleton pattern
   + `var` variable assigning, e.g. `var foo = bar`
+  + `iftypeof` if block with typeof check
+  + `iferr` if block with typeof check and throw TypeError
+  + `typeof` typeof check with strict equality
 
 
 ### module system
@@ -323,6 +326,28 @@ function ${1:ClassName} (${2:options}) {
 var ${2:foo} = ${1:bar}${0}
 ```
 
+- **[iftypeof]** if block with typeof check
+
+```js
+if (typeof ${1:actual} === ${2:expected}) {
+  ${0}
+}
+```
+
+- **[iferr]** if block with typeof check and throw TypeError
+
+```js
+if (typeof ${1:actual} === ${2:expected}) {
+  throw new ${3:TypeError}('${4:message}')
+}${0}
+```
+
+
+- **[typeof]** typeof check with strict equality
+
+```js
+typeof ${1:actual} === ${2:expected}
+```
 
 ## Contributing
 
