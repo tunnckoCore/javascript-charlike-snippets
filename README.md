@@ -65,6 +65,8 @@ This snippets use [`standard`][standard-url] to maintain code style and consiste
   + `iftypeof` if block with typeof check
   + `iferr` if block with typeof check and throw TypeError
   + `typeof` typeof check with strict equality
+  + `thr` throw error
+  + `thn` throw error with new
 
 
 ### module system
@@ -320,7 +322,7 @@ function ${1:ClassName} (${2:options}) {
 }
 ```
 
-- **var** variable assigning
+- **[var]** variable assigning
 
 ```js
 var ${2:foo} = ${1:bar}${0}
@@ -347,6 +349,18 @@ if (typeof ${1:actual} === ${2:expected}) {
 
 ```js
 typeof ${1:actual} === ${2:expected}
+```
+
+- **[thr]** throw error
+
+```js
+throw ${1:err}
+```
+
+- **[thn]** throw error with new
+
+```js
+throw new ${1:TypeError}('${2:message}')${0}
 ```
 
 ## Contributing
