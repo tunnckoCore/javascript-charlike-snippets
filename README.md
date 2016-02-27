@@ -5,8 +5,7 @@
 
 ## Rebuilding
 ```
-zip javascript-charlike-snippets.sublime-package -r javascript-charlike-snippets && \
-cp javascript-charlike-snippets.sublime-package ~/.config/sublime-text-3/Installed\ Packages/
+zip javascript-charlike-snippets.sublime-package -r javascript-charlike-snippets && cp javascript-charlike-snippets.sublime-package ~/.config/sublime-text-3/Installed\ Packages/
 ```
 
 

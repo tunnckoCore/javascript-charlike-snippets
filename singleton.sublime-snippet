@@ -2,7 +2,7 @@
   <content><![CDATA[
 function ${1:ClassName} (${2:options}) {
   if (!(this instanceof ${1:ClassName})) {
-    return new ${1:ClassName}(${2:options});
+    return new ${1:ClassName}(${2:options})
   }
   ${0}
 }

@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-assert.notDeepEqual(${1:actual}, ${2:expected}, ${3:msg})${0}
+${1:assert}.notDeepEqual(${2:actual}, ${3:expected}, ${4:msg})${0}
 ]]></content>
   <tabTrigger>asdn</tabTrigger>
   <scope>source.js</scope>
