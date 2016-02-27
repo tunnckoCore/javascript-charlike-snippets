@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+if (typeof ${1:actual} === ${2:expected}) {
+  throw new ${3:TypeError}('${4:message}')
+}${0}
+]]></content>
+  <tabTrigger>iferr</tabTrigger>
+  <scope>source.js</scope>
+  <description>if statemant with typeof</description>
+</snippet>

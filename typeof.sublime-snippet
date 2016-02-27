@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+typeof ${1:actual} === ${2:expected}
+]]></content>
+  <tabTrigger>typeof</tabTrigger>
+  <scope>source.js</scope>
+  <description>typeof actual === expected</description>
+</snippet>
